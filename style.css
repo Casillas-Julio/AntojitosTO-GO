@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 2, 2016, 12:04:04 AM
+    Author     : Dragon's
+*/
+
+body {
+    background-image: url("images/free-chalkboard-texture.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
+    width: 100%;
+    
+}
+
+#map {
+    width: 400px;
+    height: 400px;
+}
+
+#logo{
+    alignment-adjust: central;
+    padding-left: 180px;
+}
+
+
+.menu-nav {
+    margin-top: 3.5em;
+    margin-right: 6em;
+}
+
+ul.menu-nav-ul {
+    display: inline-block;
+    list-style-type: none;  
+    text-align: center;
+}
+
+th, td {
+    padding: 25px;
+
+}
+
+h2 {
+    color: white ;
+}
+
+table {
+    padding: 150px;
+}
