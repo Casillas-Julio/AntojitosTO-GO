@@ -27,6 +27,14 @@ and open the template in the editor.
             <img src="images/botones/bcerca.png" onmouseover="this.src='images/images/bhcerca'" onmouseout="this.src='images/botones/bcerca'"/>
         </div>
         <div>
+            <form action="query.php" method="post">
+                <input type="text" name="search" placeholder="Que quieres comer?">
+                <input type="submit" value="buscar" />
+            </form>  
+            <?php print ("$output");?>
+        </div>
+        
+        <div>
             <table style="width:100%">
                 <tr>
                     <td><a href=""><img src="images/botones/btacos.png" alt=""/></a></td>
