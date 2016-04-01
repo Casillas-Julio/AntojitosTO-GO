@@ -1,6 +1,7 @@
 <?php
-mysql("localhost","root" ,"test123") or die("No se puede conectar");
+mysql("localhost","root" ,"") or die("No se puede conectar");
 mysql_select_db("search_test") or die("No puede encontrar Restaurantes");
+$output = "";
 
 //collect
 if(isset($_POST['search'])) {
@@ -10,7 +11,7 @@ if(isset($_POST['search'])) {
     $query = mysql_query("SELECT * FROM ClienteMenu WHERE menu LIKE '%$searchq%'  OR ClienteNombre LIKE '%$searchq%' ") or die("no se encontraron clientes");
     $count = mysql_num_rows($query);
     if($count == 0) {
-        $output = 'No hay resultados para tu busqueda':
+        $output = "No hay resultados para tu busqueda";
     }
     else{
         while($row = mysql_fetch_array($query)) {
